@@ -47,8 +47,8 @@ Le script `Euler_ODE_Errors.py` permet de :
    - l’erreur en fonction du temps,  
    - les erreurs $L^2$ de la solution et de sa dérivée en fonction du pas de temps ($\Delta t \in [1, 0.001]$).
   
-![Figure 1 – Solution numérique](Images/Seance1/figure1.png)
-![Figure 2 – Solution numérique](Images/Seance1/figure2.png)
+![Figure 1 – Solution numérique](../Images/figure1.png)
+![Figure 2 – Solution numérique](../Images/figure2.png)
   
 
 

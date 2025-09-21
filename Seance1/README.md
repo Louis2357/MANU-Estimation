@@ -113,3 +113,79 @@ Le script Python associé permet de :
  
 ![Figure 3 – Solution numérique](../Images/figure3.png)
 
+
+## Passage en 1D
+On considère l’équation en une dimension :
+
+$$
+u_t + v_1 u_x - \nu u_{xx} = -\lambda u + f(t,x),
+$$
+
+avec conditions initiales et aux limites :
+
+- Condition initiale :
+$$
+u(0,x) = u_0(x)
+$$
+
+- Conditions aux limites :
+$$
+u(t,0) = u_l \quad \text{(Dirichlet non homogène à gauche)}
+$$
+
+$$
+u_x(t,L) = g \quad \text{(Neumann non homogène à droite)}
+$$
+
+---
+
+## 🔹 Passage du 2D au 1D
+En 2D, l’équation générale est :
+
+$$
+u_t + v_1 u_x + v_2 u_y - \nu (u_{xx} + u_{yy}) = -\lambda u + f
+$$
+
+En 1D :
+- On supprime la variable $y$ et les termes associés.
+- Il reste :
+$$
+u_t + v_1 u_x - \nu u_{xx} = -\lambda u + f
+$$
+
+---
+
+## 🔹 Condition initiale compatible
+On cherche $u_0(x)$ tel que :
+- $u_0(0) = u_l$
+- $u_0'(L) = g$
+
+Une solution simple est :
+$$
+u_0(x) = u_l + g x
+$$
+
+Car :
+- $u_0(0) = u_l$
+- $u_0'(L) = g$
+
+---
+
+## 🔹 Discrétisation par différences finies
+- **Dérivée seconde centrée** :
+$$
+u''(x_i) \approx \frac{u_{i+1} - 2u_i + u_{i-1}}{h^2}
+$$
+→ Ordre 2 au centre du domaine.
+
+- **Dérivée première centrée** :
+$$
+u'(x_i) \approx \frac{u_{i+1} - u_{i-1}}{2h}
+$$
+→ Ordre 2 au centre.
+
+- **Aux frontières** :
+  - Schéma avant/arrière pour $u'(x)$ : ordre 1.
+  - L’ordre de précision se dégrade sur les bords.
+
+

@@ -1,6 +1,6 @@
-# Séance 1 – Méthode d’Euler explicite pour une EDO
+# Séance 1
 
-## 📘 Problème étudié
+## 📘 Problème étudié : Méthode d’Euler explicite pour une EDO
 On considère l’équation différentielle ordinaire suivante :
 
 $$
@@ -46,17 +46,3 @@ Le script `Euler_ODE_Errors.py` permet de :
    - la solution exacte et la solution numérique,  
    - l’erreur en fonction du temps,  
    - les erreurs $L^2$ de la solution et de sa dérivée en fonction du pas de temps ($\Delta t \in [1, 0.001]$).
-
----
-
-## ⚙️ Données utilisées
-- Durée de la simulation : $T = 60s$  
-- Pas de temps pour comparaison : $\Delta t = 1s$  
-- Étude de convergence : 20 valeurs de $\Delta t$ décroissantes de 1 à 0.001  
-- Paramètres :
-  - $u_0 = 1$  
-  - $\lambda = 1$
-
----
-
-## 📂 Organisation

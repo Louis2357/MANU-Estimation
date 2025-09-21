@@ -25,4 +25,4 @@ jobs:
           
       - name: Run script
         run: |
-          Séance1/python Euler_ODE_Errors.py
+          python Seance1/Euler_ODE_Errors.py

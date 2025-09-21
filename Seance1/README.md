@@ -3,9 +3,9 @@
 ## 📘 Problème étudié
 On considère l’équation différentielle ordinaire suivante :
 
-\[
-u'(t) = -\lambda u(t), \quad u(0) = u_0, \quad \lambda = 1, \; u_0 = 1
-\]
+$$
+u'(t) = -\lambda\,u(t),\qquad u(0)=u_0=1,\qquad \lambda=1
+$$
 
 La solution exacte est connue :
 

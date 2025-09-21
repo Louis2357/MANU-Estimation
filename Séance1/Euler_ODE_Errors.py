@@ -45,6 +45,7 @@ plt.ylabel("Erreur absolue")
 plt.title("Erreur en fonction du temps (dt=1s)")
 
 plt.tight_layout()
+plt.savefig("figure1.png")
 plt.show()
 
 # ------------------------------------------------------
@@ -86,4 +87,5 @@ plt.ylabel("Erreur L2 sur u'")
 plt.title("Erreur L2 de la dérivée")
 
 plt.tight_layout()
+plt.savefig("figure2.png")
 plt.show()

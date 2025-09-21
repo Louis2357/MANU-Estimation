@@ -47,6 +47,8 @@ Le script `Euler_ODE_Errors.py` permet de :
    - l’erreur en fonction du temps,  
    - les erreurs $L^2$ de la solution et de sa dérivée en fonction du pas de temps ($\Delta t \in [1, 0.001]$).
   
+
+
 ## 📘 Problème étudié 2 : Transport–diffusion–réaction
 On considère l’équation aux dérivées partielles suivante dans un domaine rectangulaire :
 
@@ -57,7 +59,7 @@ $$
 avec la source définie par :
 
 $$
-f(t,s) = T_c \exp\!\big(-k \, d(s,s_c)^2\big),
+f(t,s) = T_c \exp\big(-k \, d(s,s_c)^2\big),
 $$
 
 où :

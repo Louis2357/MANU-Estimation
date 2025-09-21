@@ -110,4 +110,6 @@ Le script Python associé permet de :
   - $T_c$ : amplitude de la source,  
   - $k$ : largeur de la gaussienne,  
   - $s_c=(x_c,y_c)$ : centre de la source.
+ 
+![Figure 3 – Solution numérique](../Images/figure3.png)
 

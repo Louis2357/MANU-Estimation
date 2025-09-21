@@ -71,10 +71,7 @@ $$
 ---
 
 ## 🔹 Conditions aux limites
-- **Dirichlet** uniquement sur les bords **entrants**, c’est-à-dire là où le produit scalaire entre la vitesse et la normale est strictement négatif :
-  $$
-  V \cdot n(s) < 0.
-  $$
+- **Dirichlet** uniquement sur les bords **entrants**, c’est-à-dire là où le produit scalaire entre la vitesse et la normale est strictement négatif : $V \cdot n(s) < 0.$
 
 - **Condition initiale** : en général $u(0,x,y)=0$ (ou définie selon le cas d’étude).
 

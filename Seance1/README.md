@@ -114,7 +114,7 @@ Le script Python associé permet de :
 ![Figure 3 – Solution numérique](../Images/figure3.png)
 
 
-## Passage en 1D
+## 🔹Passage en 1D
 On considère l’équation en une dimension :
 
 $$
@@ -123,15 +123,9 @@ $$
 
 avec conditions initiales et aux limites :
 
-- Condition initiale :
-$$
-u(0,x) = u_0(x)
-$$
+- Condition initiale : $u(0,x) = u_0(x)$
+- Conditions aux limites : $u(t,0) = u_l \quad \text{(Dirichlet non homogène à gauche)}$
 
-- Conditions aux limites :
-$$
-u(t,0) = u_l \quad \text{(Dirichlet non homogène à gauche)}
-$$
 
 $$
 u_x(t,L) = g \quad \text{(Neumann non homogène à droite)}

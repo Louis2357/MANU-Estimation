@@ -48,3 +48,64 @@ Le script `Euler_ODE_Errors.py` permet de :
    - les erreurs $L^2$ de la solution et de sa dérivée en fonction du pas de temps ($\Delta t \in [1, 0.001]$).
   
 ## 📘 Problème étudié 2 : Transport–diffusion–réaction
+On considère l’équation aux dérivées partielles suivante dans un domaine rectangulaire :
+
+$$
+u_t + v_1 u_x + v_2 u_y - \nu (u_{xx} + u_{yy}) = -\lambda u + f(t,x,y),
+$$
+
+avec la source définie par :
+
+$$
+f(t,s) = T_c \exp\!\big(-k \, d(s,s_c)^2\big),
+$$
+
+où :
+
+$$
+d(s,s_c)^2 = (x-x_c)^2 + (y-y_c)^2.
+$$
+
+---
+
+## 🔹 Conditions aux limites
+- **Dirichlet** uniquement sur les bords **entrants**, c’est-à-dire là où le produit scalaire entre la vitesse et la normale est strictement négatif :
+  $$
+  V \cdot n(s) < 0.
+  $$
+
+- **Condition initiale** : en général $u(0,x,y)=0$ (ou définie selon le cas d’étude).
+
+---
+
+## 🔹 Méthode numérique
+- Discrétisation spatiale : différences finies sur une grille régulière.  
+- Transport : schéma **amont (upwind)** pour les termes $v_1 u_x + v_2 u_y$.  
+- Diffusion : schéma **centré** pour le Laplacien $u_{xx}+u_{yy}$.  
+- Réaction : $-\lambda u$.  
+- Source : gaussienne centrée en $s_c$.  
+- Avancement en temps : **Euler explicite**.
+
+---
+
+## 📊 Objectifs du code
+Le script Python associé permet de :
+1. Résoudre l’équation de transport–diffusion–réaction dans un domaine rectangulaire.  
+2. Illustrer :
+   - La **solution numérique** $u(t,x,y)$.  
+   - L’**erreur $L^2$ sur la solution**.  
+   - L’**erreur $L^2$ sur la norme du gradient**.  
+3. Présenter les **trois figures côte à côte** (solution, erreur sur $u$, erreur sur $\nabla u$).
+
+---
+
+## ⚙️ Données
+- Domaine rectangulaire : $[0,L_x] \times [0,L_y]$.  
+- Vitesse : $V=(v_1,v_2)$.  
+- Paramètres :
+  - $\nu$ : coefficient de diffusion,  
+  - $\lambda$ : coefficient de réaction,  
+  - $T_c$ : amplitude de la source,  
+  - $k$ : largeur de la gaussienne,  
+  - $s_c=(x_c,y_c)$ : centre de la source.
+

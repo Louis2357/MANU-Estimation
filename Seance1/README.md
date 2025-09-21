@@ -134,9 +134,7 @@ On cherche $u_0(x)$ tel que :
 - $u_0'(L) = g$
 
 Une solution simple est : 
-$$
-u_0(x) = u_l + g x 
-$$
+$u_0(x) = u_l + g x $
 
 Car :
 - $u_0(0) = u_l$

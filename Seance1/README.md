@@ -1,6 +1,6 @@
 # Séance 1
 
-## 📘 Problème étudié : Méthode d’Euler explicite pour une EDO
+## 📘 Problème étudié 1 : Méthode d’Euler explicite pour une EDO
 On considère l’équation différentielle ordinaire suivante :
 
 $$

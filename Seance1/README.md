@@ -114,24 +114,6 @@ Le script Python associé permet de :
 ![Figure 3 – Solution numérique](../Images/figure3.png)
 
 
-## 🔹Passage en 1D
-On considère l’équation en une dimension :
-
-$$
-u_t + v_1 u_x - \nu u_{xx} = -\lambda u + f(t,x),
-$$
-
-avec conditions initiales et aux limites :
-
-- Condition initiale : $u(0,x) = u_0(x)$
-- Conditions aux limites : $u(t,0) = u_l \quad \text{(Dirichlet non homogène à gauche)}$
-
-$
-u_x(t,L) = g \quad \text{(Neumann non homogène à droite)}
-$
-
----
-
 ## 🔹 Passage du 2D au 1D
 En 2D, l’équation générale est :
 
@@ -142,9 +124,7 @@ $$
 En 1D :
 - On supprime la variable $y$ et les termes associés.
 - Il reste :
-$
-u_t + v_1 u_x - \nu u_{xx} = -\lambda u + f
-$
+$u_t + v_1 u_x - \nu u_{xx} = -\lambda u + f$
 
 ---
 
@@ -169,7 +149,7 @@ Car :
 → Ordre 2 au centre du domaine.
 
 - **Dérivée première centrée** : $u'(x_i) \approx \frac{u_{i+1} - u_{i-1}}{2h}$
-→ Ordre 2 au centre.
+→ Ordre 1 au centre.
 
 
 

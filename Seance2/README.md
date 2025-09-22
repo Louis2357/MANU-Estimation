@@ -6,10 +6,16 @@
 Résoudre numériquement en 1D, par marche en temps vers l’état stationnaire, l’EDP : 
 
 $$ 
-u_t + V\,u_x - K\,u_{xx} + \lambda\,u = F(x), 
+u_t + V\,u_x - K\,u_{xx} + \lambda\,u = F(x)
 $$
 
-sur $ x\in[0,L] $ , avec un schéma explicite en temps.
+sur 
+
+$$ 
+x\in[0,L] 
+$$
+
+avec un schéma explicite en temps.
 
 ### 🧱 Ce que fait le code
 - **Raffinement du maillage** : `for iter in range(niter_refinement): NX = NX + 3` → maillage de plus en plus fin.

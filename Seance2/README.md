@@ -49,8 +49,9 @@ $u_{\text{ex}}(x)=\exp(-10(x-\tfrac{L}{2})^2)$
 $\qquad L=1, V=1, \nu=0.01, \lambda=1$ .
 
 En stationnaire $u_t=0$, 
+
 on définit:
-$f(x)=V\,u'_{\text{ex}}(x)-\nu\,u''_{\text{ex}}(x)+\lambda\,u_{\text{ex}}(x).$
+$f(x)=Vu'_{\text{ex}}(x)-\nu\,u''_{\text{ex}}(x)+\lambda u_{\text{ex}}(x).$
 
 Avec $r=x-\tfrac{1}{2}$ :
 $$

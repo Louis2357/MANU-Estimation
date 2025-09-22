@@ -6,7 +6,7 @@
 Résoudre numériquement en 1D, par marche en temps vers l’état stationnaire, l’EDP : 
 
 $$ 
-u_t + V\,u_x - K\,u_{xx} + \lambda\,u = F(x)
+u_t + V.u_x - K.u_{xx} + \lambda.u = F(x)
 $$
 
 sur 
@@ -52,7 +52,7 @@ En stationnaire $u_t=0$,
 
 On définit :
 
-$f(x)=V.u'_{ex}(x) - \nu.u'_{ex}(x)$
+$f(x)=V.u'_{ex} - \nu.u'_{ex}$
 
 
 =V\,u'_{\text{ex}}(x)\;-\;\nu\,u''_{\text{ex}}(x)\;+\;\lambda\,u_{\text{ex}}(x).

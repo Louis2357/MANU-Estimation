@@ -120,15 +120,10 @@ $$
 $$
 
 $$
-\boxed{\;
-\big\|(u_h - u_{\text{ex}})'\big\|_{L^2,h}
+\|(u_h-u_{\text{ex}})'\|_{L^2}
 \;\approx\;
-\left(
-h\Big[\tfrac12\,\delta_0^2
-+\sum_{i=1}^{N-2}\delta_i^2
-+\tfrac12\,\delta_{N-1}^2\Big]
-\right)^{1/2}
-\; }.
+\sqrt{\,h\sum_{i=1}^{N-2}
+\Big(\tfrac{u_{i+1}-u_{i-1}}{2h}-\tfrac{u_{\text{ex},i+1}-u_{\text{ex},i-1}}{2h}\Big)^2}\,.
 $$
 
 via dérivée centrée.

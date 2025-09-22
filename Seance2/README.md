@@ -44,9 +44,9 @@ Version qui :
 6) montre la **convergence** vers le stationnaire et **mesure les erreurs** $L^2$ et $H^1$ sur plusieurs maillages.
 
 ### 🔢 Problème test (solution fabriquée)
-On prend
+On prend :
 $$
-u_{\text{ex}}(x)=\exp\!\big(-10\,(x-\tfrac{L}{2})^2\big),
+u_{\text{ex}}(x)=\exp\big(-10\,(x-\tfrac{L}{2})^2\big),
 \qquad L=1, V=1, \nu=0.01, \lambda=1 .
 $$
 

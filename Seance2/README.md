@@ -52,7 +52,7 @@ En stationnaire $u_t=0$,
 
 On définit :
 
-$f(x)$
+$f(x)=V$
 
 
 =V\,u'_{\text{ex}}(x)\;-\;\nu\,u''_{\text{ex}}(x)\;+\;\lambda\,u_{\text{ex}}(x).

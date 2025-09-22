@@ -51,6 +51,7 @@ $\qquad L=1, V=1, \nu=0.01, \lambda=1$ .
 En stationnaire $u_t=0$,
 
 On définit :
+
 $f(x)$
 
 

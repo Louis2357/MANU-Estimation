@@ -21,7 +21,7 @@ avec un schéma explicite en temps.
 - **Raffinement du maillage** : `for iter in range(niter_refinement): NX = NX + 3` → maillage de plus en plus fin.
 - **Pas de temps (CFL)** : `dt = dx**2/(V*dx + K + dx**2)` (puis ajusté) → contrainte CFL advection/diffusion/réaction.
 - **Schéma spatial** :
-  - Dérivées **centrées** pour \(u_x, u_{xx}\).
+  - Dérivées **centrées** pour $u_x, u_{xx}$.
   - **Viscosité numérique** via `xnu = K + 0.5*dx*abs(V)` (idée “centré + viscosité num.”).
 - **Marche en temps** : Euler explicite jusqu’à `res/res0 < eps` (convergence vers stationnaire).
 - **CL actuelles (de fait)** : `T[0]` et `T[-1]` jamais imposés explicitement → **Dirichlet homogène** aux deux bords.

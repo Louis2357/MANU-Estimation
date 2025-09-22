@@ -117,10 +117,6 @@ $$
 
 $$
 \|(u_h-u_{\text{ex}})'\|_{L^2}
-$$
-
-$$
-\|(u_h-u_{\text{ex}})'\|_{L^2}
 \approx\
 \sqrt{h\sum_{i=1}^{N-2}
 (\tfrac{u_{i+1}-u_{i-1}}{2h}-\tfrac{u_{\text{ex},i+1}-u_{\text{ex},i-1}}{2h})^2}.

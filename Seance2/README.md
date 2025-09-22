@@ -123,6 +123,7 @@ via dérivée centrée.
 
 ### 🔁 Étude sur 5 maillages
 Ex. $N=\{3,6,12,24,48\}$. Tracer 
+
 $$
 \|u_h-u_{\text{ex}}\|_{L^2}
 $$

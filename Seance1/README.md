@@ -22,7 +22,7 @@ $$
 u_{n+1} = u_n + \Delta t \cdot f(t_n, u_n)
 $$
 
-avec
+où :
 $$
 f(t,u) = -\lambda u 
 $$.  

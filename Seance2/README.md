@@ -52,8 +52,10 @@ En stationnaire $u_t=0$,
 
 On définit :
 $$
-f(x)=V\,u'_{\text{ex}}(x)\;-\;\nu\,u''_{\text{ex}}(x)\;+\;\lambda\,u_{\text{ex}}(x).
+f(x)
 $$
+
+=V\,u'_{\text{ex}}(x)\;-\;\nu\,u''_{\text{ex}}(x)\;+\;\lambda\,u_{\text{ex}}(x).
 
 
 Avec $r=x-\tfrac{1}{2}$ :

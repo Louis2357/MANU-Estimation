@@ -1,6 +1,6 @@
-# ADRS 1D – Transport–Diffusion–Réaction
+# Transport–Diffusion–Réaction
 
-## Partie 1 — Code initial `adrs.py` (explication succincte)
+## Partie 1 — Code `adrs.py`
 
 ### 🎯 But
 Résoudre numériquement en 1D, par marche en temps vers l’état stationnaire, l’EDP
@@ -23,7 +23,7 @@ sur \(x\in[0,L]\), avec un schéma explicite en temps.
 
 ---
 
-## Partie 2 — Code modifié (travail réalisé)
+## Partie 2 — Code modifié
 
 ### ✅ Objectif
 Version propre qui :

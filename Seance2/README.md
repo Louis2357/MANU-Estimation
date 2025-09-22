@@ -91,10 +91,11 @@ $$
 - Critère **résidu normalisé** :
   
 $$
-\||R^n\||_{L^2}/\||R^0\||_{L^2} 
-
-avec R=-V u_x + \nu u_{xx} - \lambda u + f
+\|R^n\|_{L^2}/\|R^0\|_{L^2}
 $$
+
+avec 
+$R=-V u_x + \nu u_{xx} - \lambda u + f$
 
 
 - Variante : $\|u^{n+1}-u^n\|_{L^2}/\|u^1-u^0\|_{L^2}$.

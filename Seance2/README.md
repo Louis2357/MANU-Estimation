@@ -43,16 +43,25 @@ Version qui :
 ### 🔢 Problème test (solution fabriquée)
 On prend
 $$
-u_{\text{ex}}(x) = \exp\!\big(-10\,(x-\tfrac{L}{2})^2\big),\qquad L=1,\;V=1,\; \nu=0.01,\; \lambda=1.
+u_{\text{ex}}(x)=\exp\!\big(-10\,(x-\tfrac{L}{2})^2\big),
+\qquad L=1,\; V=1,\; \nu=0.01,\; \lambda=1 .
 $$
-En stationnaire, $u_t=0$, on définit
+
+En stationnaire $u_t=0$, on définit
 $$
-f(x) = V\,u'_{\text{ex}} - \nu\,u''_{\text{ex}} + \lambda\,u_{\text{ex}}.
+f(x)=V\,u'_{\text{ex}}(x)-\nu\,u''_{\text{ex}}(x)+\lambda\,u_{\text{ex}}(x).
 $$
-Avec $r=x-\tfrac{1}{2}$ : $u'_{\text{ex}}=-20ru_{\text{ex}},\; u''_{\text{ex}}=(-20+400r^2)u_{\text{ex}}$, donc
+
+Avec $r=x-\tfrac{1}{2}$ :
 $$
-\boxed{\;f(x)=u_{\text{ex}}(x)\,\big(-4r^2 - 20r + 1.2\big)\; }.
+u'_{\text{ex}}(x)=-20\,r\,u_{\text{ex}}(x),\qquad
+u''_{\text{ex}}(x)=\big(-20+400\,r^{2}\big)\,u_{\text{ex}}(x),
 $$
+donc
+$$
+\boxed{\,f(x)=u_{\text{ex}}(x)\,\big(-4\,r^{2}-20\,r+1.2\big)\,}.
+$$
+
 
 ### 🧩 Discrétisation
 - **Maillage uniforme** : $x_i = i\,h,\; i=0..N-1,\; h=L/(N-1)$.

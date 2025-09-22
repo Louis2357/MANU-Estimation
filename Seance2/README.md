@@ -47,7 +47,7 @@ Version qui :
 On prend
 $$
 u_{\text{ex}}(x)=\exp\!\big(-10\,(x-\tfrac{L}{2})^2\big),
-\qquad L=1,\; V=1,\; \nu=0.01,\; \lambda=1 .
+\qquad L=1, V=1, \nu=0.01, \lambda=1 .
 $$
 
 En stationnaire $u_t=0$, on définit

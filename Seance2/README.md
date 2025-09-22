@@ -98,7 +98,8 @@ avec
 $R=-V u_x + \nu u_{xx} - \lambda u + f$
 
 
-- Variante : $\|u^{n+1}-u^n\|_{L^2}/\|u^1-u^0\|_{L^2}$.
+- Variante :
+$\|u^{n+1}-u^n\|_{L^2}/\|u^1-u^0\|_{L^2}$.
 
 ### 📏 Erreurs après convergence
 - $L^2$ : $\|u_h-u_{\text{ex}}\|_{L^2} \approx \sqrt{h\sum_i (u_i-u_{\text{ex},i})^2}$.  

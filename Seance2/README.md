@@ -117,7 +117,12 @@ $$
 
 $$
 \|(u_h-u_{\text{ex}})'\|_{L^2}
-$$ 
+$$
+
+$$
+\big\|(u_h - u_{\text{ex}})'\big\|_{L^2(0,L)}
+=\left(\int_0^L \big|\partial_x u_h(x)-\partial_x u_{\text{ex}}(x)\big|^2\,dx\right)^{1/2}.
+$$
 
 via dérivée centrée.
 

@@ -45,9 +45,8 @@ Version qui :
 
 ### 🔢 Problème test (solution fabriquée)
 On prend :
-$u_{\text{ex}}(x)=\exp\big(-10(x-\tfrac{L}{2})^2\big)$
-
-\qquad L=1, V=1, \nu=0.01, \lambda=1 .
+$u_{\text{ex}}(x)=\exp(-10(x-\tfrac{L}{2})^2)$
+$\qquad L=1, V=1, \nu=0.01, \lambda=1$ .
 
 En stationnaire $u_t=0$, on définit
 $$

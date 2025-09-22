@@ -29,6 +29,9 @@ avec un schéma explicite en temps.
 
 ---
 
+![Figure 1 – Solution numérique](../Images/figure_s2_1.png)
+![Figure 2 – Convergence](../Images/figure_s2_2.png)
+
 ## Partie 2 — Code modifié
 
 ### ✅ Objectif

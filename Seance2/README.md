@@ -122,7 +122,18 @@ $$
 via dérivée centrée.
 
 ### 🔁 Étude sur 5 maillages
-Ex. $N=\{3,6,12,24,48\}$. Tracer $\|u_h-u_{\text{ex}}\|_{L^2}$ et $\|(u_h-u_{\text{ex}})'\|_{L^2}$ **en fonction de $h$** (log–log).
+Ex. $N=\{3,6,12,24,48\}$. Tracer 
+$$
+\|u_h-u_{\text{ex}}\|_{L^2}
+$$
+
+et
+
+$$
+\|(u_h-u_{\text{ex}})'\|_{L^2}
+$$
+
+**en fonction de $h$** (log–log).
 
 ![Figure 3 – Solution numérique](../Images/figure_s2_3.png)
 ![Figure 4 – Solution numérique](../Images/figure_s2_4.png)

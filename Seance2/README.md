@@ -60,14 +60,14 @@ $$
 Avec $r=x-\tfrac{1}{2}$ :
 
 $$
-u'_{\text{ex}}(x)=-20\,r\,u_{\text{ex}}(x),\qquad
-u''_{\text{ex}}(x)=\big(-20+400\,r^{2}\big)\,u_{\text{ex}}(x),
+u'_{\text{ex}}(x)=-20.r.u_{\text{ex}}(x),\qquad
+u''_{\text{ex}}(x)=(-20+400.r^{2}).u_{\text{ex}}(x)
 $$
 
 donc
 
 $$
-\boxed{\,f(x)=u_{\text{ex}}(x)\,\big(-4\,r^{2}-20\,r+1.2\big)\,}.
+f(x)=u_{\text{ex}}(x).(-4.r^{2}-20.r+1.2).
 $$
 
 

@@ -106,8 +106,20 @@ $$
 
 
 ### 📏 Erreurs après convergence
-- $L^2$ : $\|u_h-u_{\text{ex}}\|_{L^2} \approx \sqrt{h\sum_i (u_i-u_{\text{ex},i})^2}$.  
-- $H^1$ (semi-norme) : $\|(u_h-u_{\text{ex}})'\|_{L^2}$ via dérivée centrée.
+- $L^2$ :
+
+$$
+\|u_h-u_{\text{ex}}\|_{L^2} \approx \sqrt{h\sum_i (u_i-u_{\text{ex},i})^2}
+$$
+
+
+- $H^1$ (semi-norme) :
+
+$$
+\|(u_h-u_{\text{ex}})'\|_{L^2}
+$$ 
+
+via dérivée centrée.
 
 ### 🔁 Étude sur 5 maillages
 Ex. $N=\{3,6,12,24,48\}$. Tracer $\|u_h-u_{\text{ex}}\|_{L^2}$ et $\|(u_h-u_{\text{ex}})'\|_{L^2}$ **en fonction de $h$** (log–log).

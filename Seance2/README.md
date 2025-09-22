@@ -51,7 +51,7 @@ $\qquad L=1, V=1, \nu=0.01, \lambda=1$ .
 En stationnaire $u_t=0$, 
 
 on définit :
-$f(x)=V\dot u'_{\text{ex}}(x)-\nu u''_{\text{ex}}(x)+\lambda u_{\text{ex}}(x)$
+$f(x)=V\dot u'_{\text{ex}}(x)-\nu\dotu''_{\text{ex}}(x)+\lambda\dotu_{\text{ex}}(x)$
 
 Avec $r=x-\tfrac{1}{2}$ :
 $$

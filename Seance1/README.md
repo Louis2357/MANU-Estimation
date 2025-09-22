@@ -24,9 +24,9 @@ $$
 
 où 
 
-$$
+$
 f(t,u) = -\lambda u 
-$$  
+$  
 
 Ainsi :
 

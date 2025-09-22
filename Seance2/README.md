@@ -120,8 +120,15 @@ $$
 $$
 
 $$
-\big\|(u_h - u_{\text{ex}})'\big\|_{L^2(0,L)}
-=\left(\int_0^L \big|\partial_x u_h(x)-\partial_x u_{\text{ex}}(x)\big|^2\,dx\right)^{1/2}.
+\boxed{\;
+\big\|(u_h - u_{\text{ex}})'\big\|_{L^2,h}
+\;\approx\;
+\left(
+h\Big[\tfrac12\,\delta_0^2
++\sum_{i=1}^{N-2}\delta_i^2
++\tfrac12\,\delta_{N-1}^2\Big]
+\right)^{1/2}
+\; }.
 $$
 
 via dérivée centrée.

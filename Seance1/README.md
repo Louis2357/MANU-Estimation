@@ -20,11 +20,9 @@ Le schéma d’Euler explicite s’écrit :
 
 $$
 u_{n+1} = u_n + \Delta t \cdot f(t_n, u_n)
-$$
 
-où 
+où
 
-$$ 
 f(t,u) = -\lambda u 
 $$.  
 Ainsi :

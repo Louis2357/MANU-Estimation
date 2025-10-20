@@ -9,23 +9,30 @@ $$ x\in[0,1] $$
 
 $$ t\in[0,T] $$
 
-\[
+$$
 u_t + V\,u_x - K\,u_{xx} + \lambda\,u = f(x,t).
-\]
+$$
+
 On choisit une solution exacte **séparable** :
-\[
+
+$$
 u_{\mathrm{ex}}(t,x) = u(t)\,v(x),\quad u(t)=\sin(4\pi t).
-\]
+$$
+
 Alors
-\[
+
+$$
 u_t = 4\pi\cos(4\pi t)\,v(x),\quad
 u_x = u(t)\,v_x(x),\quad
 u_{xx} = u(t)\,v_{xx}(x),
-\]
+$$
+
 et le terme source
-\[
+
+$$
 f(x,t)= u_t + V\,u_x - K\,u_{xx} + \lambda\,u.
-\]
+$$
+
 > Comme \(u(t)\) oscille, le **résidu ne tend pas vers 0** (problème instationnaire).
 
 ---

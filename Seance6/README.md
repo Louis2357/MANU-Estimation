@@ -71,18 +71,6 @@ Si chaque \(T_i\) est calculé sur **son propre maillage adapté** \(x^{(i)}\), 
 
 ---
 
-## ▶️ Utilisation
-
-### Prérequis
-```bash
-pip install numpy matplotlib
-```
-
-### Lancer
-```bash
-python optim_adrs.py
-```
-
 ### Paramètres utiles (en tête du fichier)
 - `N_ctrl` (nombre de contrôles), `centers` (positions), `alpha` (largeur gaussienne),
 - `NX_ref` (taille maillage uniforme de référence),

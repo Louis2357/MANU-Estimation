@@ -6,6 +6,7 @@ Ce dépôt illustre l’**équation d’Advection–Diffusion–Réaction avec S
 On résout sur :
 
 $$ x\in[0,1] $$
+
 $ t\in[0,T] $
 
 \[

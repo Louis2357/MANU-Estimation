@@ -3,9 +3,7 @@
 Ce dépôt illustre l’**équation d’Advection–Diffusion–Réaction avec Source** (ADRS) en 1D, avec **solution exacte instationnaire fabriquée** et étude d’erreur sur **maillages uniformes** et **adaptatifs**.
 
 ## 📐 Problème
-On résout sur :
-
-$ x\in[0,1] $
+On résout sur $ x\in[0,1] $ :
 
 $ t\in[0,T] $
 

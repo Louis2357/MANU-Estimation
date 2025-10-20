@@ -5,9 +5,8 @@ Ce dépôt illustre l’**équation d’Advection–Diffusion–Réaction avec S
 ## 📐 Problème
 On résout sur :
 
-$$ x\in[0,1] $$
-
-$$ t\in[0,T] $$
+$ x\in[0,1] $
+$ t\in[0,T] $
 
 \[
 u_t + V\,u_x - K\,u_{xx} + \lambda\,u = f(x,t).

@@ -34,34 +34,6 @@ a = 0.5, b = 10, c = 3,  Left = 0, Right = 1
 
 ---
 
-## ▶️ Utilisation (extrait de code)
-
-```python
-# Tracé de f
-plot_f()
-
-# 1) Riemann (x-uniforme)
-N_riem, I_riem = find_N_riemann(tol=1e-3)
-print("[Riemann]    N =", N_riem, "  I ≈", I_riem)
-
-# 2) Lebesgue-genre (y-uniforme par histogrammes)
-Ny_leb, I_leb = find_Ny_lebesgue(tol=1e-3)
-print("[Lebesgue]   Ny =", Ny_leb, " I ≈", I_leb)
-
-# 3) Adaptation métrique (basée sur f'')
-N_adap, I_adap = find_N_adapted(tol=1e-3)
-print("[Adaptatif]  N =", N_adap, "  I ≈", I_adap)
-```
-
-- `plot_f()` : trace la fonction test sur `[0,1]`.  
-- `find_N_riemann(tol)` : renvoie `N` minimal et l’intégrale approchée.  
-- `find_Ny_lebesgue(tol)` : renvoie `Ny` minimal et l’intégrale approchée.  
-- `find_N_adapted(tol)` : renvoie `N` minimal et l’intégrale approchée sur maillage adapté.
-
-> Par défaut, `tol = 1e-3`. Ajustez `Nx_fine` dans la partie Lebesgue-genre si nécessaire.
-
----
-
 ## 📈 Observations attendues
 - **Riemann (x-uniforme)** : simple et robuste ; `N` peut devoir être élevé à cause de la bosse gaussienne.
 - **Lebesgue-genre (y-uniforme)** : exploite la distribution des **valeurs** de `f`, mais dépend d’un pré-échantillonnage fin en `x`.
@@ -74,11 +46,4 @@ print("[Adaptatif]  N =", N_adap, "  I ≈", I_adap)
 - Si `I_ref` est inconnu, conserver uniquement le **critère Cauchy**.
 - Si `f''` n’est pas disponible analytiquement, utiliser une **approximation numérique** (différences finies).
 - Journaliser `N`, `Ny`, la tolérance et la valeur trouvée pour la **reproductibilité**.
-
----
-
-## ✅ Résumé
-- Trois angles complémentaires :  
-  **uniforme en x** (Riemann), **uniforme en y** (Lebesgue-genre), et **maillage adapté** (métrique via `f''`).  
-- Objectif commun : atteindre `|I - 6.94| ≤ 1e-3` avec le **moins d’échantillons** possible.
 

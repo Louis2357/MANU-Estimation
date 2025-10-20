@@ -53,7 +53,10 @@ $$
 - **Espace** : différences finies **centrées**, CL **Dirichlet 0**. Stabilisation advection : viscosité numérique \(x_\nu=K+\tfrac{1}{2}|V|\Delta x\).
 - **Temps** : **Runge–Kutta** (RK1..RK4) explicites.
 - **CFL conservateur** :
-\[\Delta t \le \mathrm{CFL}\cdot \min\!\Big(\tfrac{\Delta x}{|V|},\,\tfrac{\Delta x^2}{2K}\Big).\]
+  
+$$ 
+\Delta t \le \mathrm{CFL}\cdot \min\!\Big(\tfrac{\Delta x}{|V|},\,\tfrac{\Delta x^2}{2K}\Big).
+$$
 
 ---
 

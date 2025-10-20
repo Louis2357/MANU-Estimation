@@ -66,26 +66,6 @@ soit une **métrique** \(M(t,x)=\sqrt{|u_{xx}(t,x)|+\varepsilon}\) et une **équ
 
 ---
 
-## ▶️ Exécution
-Prérequis : `numpy`, `matplotlib`.
-```bash
-pip install numpy matplotlib
-```
-
-1) **Maillages uniformes**
-```bash
-python adrs_insta.py
-```
-- Configurez `NX_list`, `Tfin`, `V,K,lam`, `CFL`, la forme de \(v(x)\).
-
-2) **Maillages adaptatifs**
-```bash
-python adrs_insta_multiple_mesh_adap.py
-```
-- Paramètres clefs : `err_tol`, `N_start`, `N_max`, `metric_mode in {final, avg, max}`, `grow`, `store_times`.
-
----
-
 ## 📈 Attendus
 - **Uniforme** : l’erreur \(L^2\) décroit avec \(N_X\) ; RK d’ordre plus élevé → meilleure précision temporelle (erreur milieu plus faible).
 - **Adaptatif** : `final` place les nœuds là où la solution **finale** est courbe ; `avg` et `max` protègent les pics **pendant l’évolution**. Le **critère mixte** évite les arrêts trop précoces/tardifs.
@@ -97,10 +77,3 @@ python adrs_insta_multiple_mesh_adap.py
 - Si \(u_{xx}\) analytique indisponible, utiliser **différences finies**.
 - Pour comparer `final/avg/max`, garder la **même tolérance** et une progression identique de `N`.
 - Ajouter `plt.savefig("figure_...png", dpi=200)` pour exporter les figures.
-
----
-
-## ✅ Résumé
-- `adrs_insta.py` : étude d’erreur (L² @ \(T/2\) et \(T\)), comparaison **RK1..RK4** (maillage uniforme).
-- `adrs_insta_multiple_mesh_adap.py` : adaptation a posteriori avec **métriques stationnaire/instationnaire**, **critère d’arrêt mixte**, visualisations multi-instants.
-
